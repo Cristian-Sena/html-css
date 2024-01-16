@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+    <style>
+        h1{
+            
+            background-color: grey;
+            height: 300px;
+            width: 300px;
+
+            /*colocando borda, padding e margin de forma simples / shorthand*/
+
+            border: 5px solid blue;
+            padding: 10px;
+            margin: 40px auto; /*margin auto para sua imagem/box fique no meio da pagina, indepednete do tamanho que fique a tela/janela */
+
+            outline: 5px dotted rgba(113, 6, 212, 0.904); /*uma linha por fora ou por cima da borda tipo uma sobre borda */
+        }
+        a{
+            /*colocando borda e padding de forma completa */
+            border-width: 5px;
+            border-style: solid;
+            border-color: deeppink;
+
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+
+
+        }
+    </style> 
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos tambem são exmplos de box-level, mas os <a href="">links são exmplos de caixas inline-level</a>. Vamos ver como funcina tudo isso.</p>
+</body>
+</html>

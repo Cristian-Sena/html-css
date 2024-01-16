@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*
+em HTML é  id = em CSS é #
+em HTML é class = em CSS é .
+*/
+
+/*
+Pode se colocar só id , ou só class
+Ou id com class e class com class - ficando a junto nas '' só com um espaço um do outro 
+*/
+
+body{
+    background-color: rgba(49, 121, 255, 0.459);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: blue;
+}
+h1#principal{
+    text-align: center;
+    background-color: rgba(0, 68, 255, 0.76);
+    color: white;
+}
+h2{
+    color: rgba(0, 0, 255, 0.555);
+} 
+.basico{
+    color: green;   
+}
+.intermediario{
+    color: yellow;
+}
+.avançado{
+    color: red;
+}
+.destaque{
+    background-color: rgba(129, 127, 16, 0.719);
+}

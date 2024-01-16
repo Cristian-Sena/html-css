@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIdias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou aumente e diminua o tamanho do navegador.</p>
+    <picture>
+        <source media="(max-width:700px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Audio</h1> 
+    <h2>
+        Vamos aprender como colocar audios no site
+    </h2>
+    <p>Uuma musica de JAZZ</p><audio src="midias/A Brand New Start - TrackTribe.mp3" controls></audio> <!--usar tag audio pra colocar um audio, seja do tipo mp3, wav que nao é indicado por ser muito pesado e ogg / ja o parametro controls ou atributo é para aparecer os controles pra poder tocar seu arquivo um display de pause volume-->
+    <p>Um podcast</p>
+    <audio preload="metadata" controls> <!--preload none nao cerrega nada do audio so quando da o play, metadat carrega so as informações e já o auto carrega tudo com o site demorando -->
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midias/guanacast-33.ogg" type="audio/ogg">
+        <p>infelizmente seu navegador não consegue reproduzir esse audio, mas  <a href="midias/guanacast-33.mp3">clique aqui nesse link para baixar</a></p>
+    </audio>
+    <!--Uma outra forma de colocar audio no seu site, essa forma é parecida com a de imagens, onde colocamos na ordem para caso o navegador nao abre o primeiro por conta do tipo dele, vai para o segundo e assim sucessivamente. Onde usamos a tag audio so com o parametro preload onde com o valor metadata ele carrega as informações do audio e so baixar o audio carrega ora ouvir quando clicar em play, e tags sources para colocar o auido no site falando com o type o ttipo de arquivo -->
+
+    <h1>Inserindo Videos hospedados localmnete</h1>
+    <p>Esse videos esta hospedado localmente </p>
+    <video controls width="500px" height="300px"  poster="imagens/Praia Tailandesa.png" loop> <!--mesmo procedimentos das imagens e audios, colocar varios formatos caso um navegador nao abra um, abra o outro arquivo de formato diferente - atributo widht para diminuir o tamanho visual do video na tela e POSTER para colocar uma imagem tipo de thumbnail do video o LOOP é para voltar o video ao terminar -->
+        <source src="videos/video-praia-mp4.mp4" type="video/mp4">
+        <source src="videos/video-praia-mkv.mkv" type="video/mp4">
+        <source src="videos/video-praia-webm.webm" type="video/webm">
+    </video>
+    <h1>Inserindo video do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=QHC665LwwBPU-3O0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Inserindo video do vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/29844795?h=f0a1764666" width="500" height="300" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

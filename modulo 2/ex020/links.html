@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a{
+            color: red;
+            text-decoration: none;
+        }
+        
+        a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+        #destaque{
+            background-color: rgba(112, 81, 248, 0.863);
+        }
+        /*
+        a:visited - qunado link ja foi visitado mas nao vi muita utilidade ou não entendi mesmo muito bem, pelo menos no visual
+        */
+        a:active{ /* quando voce clica */
+           color: rgb(16, 182, 30); 
+           font-weight: bolder;
+        }
+        a::after{
+            content: '[link]' ; /* significa que contem algo onode pode colocar coisa atraves do css como frases simbolos usando o pseudo elemto after assim mesma coisa para before*/
+            text-decoration: none;
+            color: grey;
+        }
+        
+    </style>
+ </head>
+ <body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a id="destaque" href="https://www.instagram.com/" target="_blank">Instagram</a></li> </a>
+       <li><a href="https://www.facebook.com/?locale=pt_BR" target="_blank">facebook</a></li>
+    </ul>
+ </body>
+ </html>

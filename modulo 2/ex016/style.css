@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #023535, #008F8C);
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px #033333ab;
+    width: 600px; /*largura do main*/
+    padding: 10px; /* para as palavras não ficarem grudadas no canto da borda branca nesse caso do background*/
+    margin: auto; /*deixa as margens automaticas colocando centro da sua tela, nesse caso nosso main, mesmo diminuindo ou aumentando o tamnho da janela do site*/
+}
+h1{
+    text-align: center;
+    color: #015958;
+    text-shadow: 1px 1px 1px #043b3ba2;
+}
+h2{
+    color: #0CABA8;
+}
+p{
+    text-align: justify;
+
+}

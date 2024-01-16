@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formataçoes</title>
+</head>
+<body>
+    <h1>Outras Formataçoes</h1>
+    <h2>Codigo-Fonte</h2>
+    <p>o comando <code>document.getElementById(teste)</code> e escrito em linguegem JavaScript</p>
+    <!--a tag code faz com que o conteudo fica como se fosse um codigo no seu navegador dando o mesmo espaço para as letras, mesmo sendo letras de tamando diferente-->
+    <h2>Exemplo de cod em python</h2>
+    <!--nesse caso abaixo tambem, um codigo em python dentro da pagina web dentro da tag code par aficar um pouco melhor a visualizaçao mas da para melhorar com a tag pre, antes de code assim :-->
+    
+    <pre>
+        <code>
+        num = int(input('digite um numero'))
+        if num % 2 == 0;
+            print(f'0 numero {num} e par')
+        else:
+            print(f'0 nuemro {num} e impar')
+        print ('fim do programa')
+        </code>
+    </pre>
+    <!--onde nosso cod esta dentro da tag code que esta dentro da tag pre, deixando no navegador o formato do cod no visual cod / podemos tambem ajustar o cod na pagina atraves do shift+ tab ou tab -->
+    <h2>Citaçoes Simples</h2>
+    <p>Como diria meu pai: <q>Meu irmao e frango</q></p><!--a tag q utilizada para uma citaçao deixando o texto visualmente com as '', mas e uma tga que traz significado entao quando for citar alguem ou algo, usar a tag q para tal-->
+    <h2>Citaçoes Completas</h2>
+    <p>Segundo Mauricio Samy Silva :</p>
+    <!--a tag blockquote para usar em citaçoes normalmente de livros se referenciando a alguem ,deslocando o texto a direita,e podemos usar o paramentro cite, que nao vai trazer nada visual a pagina, mas sim de significado colocando o link por exmplo da onde pegou a referncia / frase auxilixando e deixando claro ao navegador e mecanismos de busca-->
+    <blockquote>
+        Para entender a linguegem html a primeria coisa que devcemos saber e que os diferentes tipos devem ser escritos dento de tags
+    </blockquote>
+    <h2>Abreviaçoes</h2>
+    <p>Estou aprendedo <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="CAscading Style Sheet">CSS</abbr></p> <!--quando usamos abreviacoes podemos usar a tag abbr com parametro title e colocar o significado do termo por completo, que ao passar o cursor do mouse aparece o que sem abreviar, bem util-->
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">esse texto esta invertido inutil</bdo></p><!--tag bdo com parametro dir ontem ao colocar rtl right to left fica invertido o texto e ltr fica normal-->
+</body>
+</html>

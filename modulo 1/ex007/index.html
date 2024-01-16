@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formataçao de texto</title>
+    <style>
+        
+        mark{
+            background-color: red;
+        }
+    </style>
+    <!--nesse caso tudo que estiver dentro da tag mark, vai estar na cor vermelha, com excessao do primeiro mark pois coloquei style dentro da tag para mudar a cor naquele caso em especifico-->
+</head>
+<body>
+    <h1>Principais formataçoes</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>nesta frase temos um <b>termo em negrito</b>, usando a tag B (nao semantica)</p> <!--deixa o termo negrito, visualmente mesma coisa, mas e uma forma e forma se usa no css, html5 apenas semantica entao esse termo esta errado-->
+    <p>>nesta frase temos um <strong>termo em destaque</strong>, usando a tag STRONG (semantica)</p><!--termo correto para se usar negrito no html5 pois e semantico -->
+    <h2>Italico / Enfase</h2>
+    <p>nesta frase temos um <i>termo em italico</i>, usando a tag I (nao e semantica)</p><!--tag errada pois nao e semantica-->
+    <p>nessa frase temos um <em>termo em enfase</em> usdando a tag EM (semantica)</p>
+    <!--Posso selecionar um conteudo, e apertar as teclas ctrl+shif+P para envolver abreviaçao ou  seja, o que esta selecioando colcoar um tag que nao coloqeui muito mais rapido com selecionadno conteudo e  ctrl+shif+P + a tag e enter-->
+
+    <h2>Texto Marcado</h2>
+    <!--podemos mudar a cor ou adicioanr valor da tag mark com style nela propria ou em head colocando a tag style e o seletor / nesse caso essa vai ficar verde agua pois coloquei style dentro da tag mark-->
+    <p>podemos criar um <mark style="background-color: aquamarine;">texto marcado</mark> com a tag MARK</p>
+    <p>e nessa outra frase temos outro <mark>texto marcado</mark></p>
+    <h2>texto grande e pequeno</h2>
+    <p>estamos criando um<big> texto grande</big> e <small>um texto pequeno</small></p>
+    <h2>Texto deletado</h2>
+    <p>podemos marcar um <del>texto como excluido</del> para indicar que ele deve se lido, mas nao considerado</p>
+    <h2>Texto inserido</h2>
+    <p>podemos marcar um texto como <ins>isnerido para dar enfase</ins> e indicar que foi adicioando depois</p><!--siginifica a tag ins = sublinhado mas semantico-->
+    <p>existe tambem o <u>sublinhado</u> com a tag U (nao semantico)</p>
+    <h2>Texto sobrescrito</h2>
+    <p>para inserir coisas do tipo x<sup>20</sup>+3</p>
+    <h2>Texto subscrito</h2>
+    <p>para inserir cosia do tipo H<sub>2</sub>0</p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+ 
+</head>
+<body>
+    <h1>Links externos</h1> <!-- link externos com tag a e paramentro href de referencia do link apenas colar url externa e com parametro target e valor _blank vai pra outra pagina, e parametro rel de relativo e valor external indica ao navegador que e um link externo-->
+    <p>esse e um link do <a href="https://www.youtube.com/" target="_blank" rel="external">youtube</a> </p>
+    <p>esse e um link do <a href="https://www.facebook.com/?locale=pt_BR">facebook</a> </p>
+    <h2>Links internos</h2>
+    <p>Essa e a primeira pagina do meu site, <a href="pag2.html" rel="next">clique aqui se quiser ir para a segunda</a></p> <!--o parametro rel next indica ao navegador que esse lnk e um link para a proxima pagina-->
+    <p>Voce tambem pode acessar a <a href="noticias/pag3.html" rel="next" target="_self"> pagina de noticias</a></p> <!-- o target self significa dentro da aba, mesma guia-->
+    <h1>Link Para baixar PDF</h1>
+    <p>segue link para <a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">baixar livro PDF</a></p> 
+    <!-- navegador enrtender que e um link paara pdf onde pode baixar nao mandar direto, mas em outros casos se fosse um arquivo zip, usando o atributo type= applicaiton/zip daria certo, no arquivo pdf da aula tem outro valores pra esse atributo de acordo com o tipo de arquivo que deseja colocar no  link-->
+    <!-- atributo type nesse caso seria pra falar ao navegador que tipo de arquivo e-->
+    <p>outro link mas para o <a href="livro/meulivro.zip" >arquivo em zip</a></p>
+    <!--nesse tipo de arquivo zip, dessa forma ele ja baixa direto pelo link por ser um arquivo baixavel automaticamente, nao sendo necessario os atributyos de dowload e type, apenas por signifcado para dizer ao navegador, nao sendo visual e de valor-->
+</body>
+</html>

@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    
+}
+header{
+    background: linear-gradient(rgb(23, 221, 139), #054625);
+    width: auto;
+    height: auto;
+    color: white;
+    padding: 5px;
+    margin: -10px;
+    box-shadow: -2px 2px 12px rgba(0, 0, 0, 0.521);
+}
+header > h1{
+    text-align: center;
+}
+header > p {
+    text-align: center;
+    font-size: smaller;
+    padding: 0px 0px 10px 0px;
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bolder;
+}
+main{
+    background-color: white;
+    width: 700px;
+    height: auto;
+    margin: -20px auto auto auto;
+    border-radius: 0px 0px 10px 10px;
+    
+}
+section > h1{
+    color: rgb(3, 117, 70);
+    font-weight: bolder;
+    padding: 10px 15px 10px 15px;
+}
+section > p {
+    text-align: justify;
+    padding: 0px 15px 0px 15px;
+    text-indent: 20px ;
+}
+strong{
+    color: rgb(2, 109, 95);
+}
+section > h2 {
+    color:  rgb(3, 151, 89);
+   background-image: linear-gradient(to right, #a4f3d9cb, white);
+   padding: 0px 10px 0px 10px;
+   margin: 15px;
+}
+section#primeiraversao > img{
+    width: 700px;
+    height: auto; 
+}
+img#irina {
+    width: 670px;
+    margin: auto 15px auto 15px;
+}
+img#bugdroid {
+    height: 370px;
+    width: 500px;
+    margin: auto 15px auto 107px;
+}
+video{
+    width: 640px;
+    margin: auto 15px auto 0px;
+    border: 30px solid #054626f1;
+    
+}
+h3{
+    color: white;
+    font-weight: bold;
+    background-color: #0ab37a;
+    padding: 5px;
+    margin: 10px 15px 10px 15px;
+    border-radius: 10px 10px 0px 0px;
+}
+div#aprender{
+    background-color: #7fffd477;
+    border-radius: 0px 0px 10px 10px;   
+    margin: -16px 15px 5px 15px;
+}
+div#aprender > p {
+    padding: 10px 5px 0px 5px;
+}
+div#aprender > p#acesse{
+    padding: 0px 5px 15px 5px;
+}
+ul#um{
+    margin: 20px 15px 10px 15px;
+}
+ul#dois{
+    margin: -133px 5px 10px 370px;
+}
+div > p {
+    text-indent: 20px;
+    padding: 0px 15px 0px 15px;
+}
+footer > p {
+    background-color: #054625;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px;
+    margin: 10px -8px 10px -8px;  
+}
+
