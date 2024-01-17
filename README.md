@@ -3,4 +3,4 @@
 
 Teste alterando o repositorio local
 
-<a href=" https://cristian-sena.github.io/html-css/m%C3%B3dulo1/ex001/index.html">execute esse link </a>
+<a href=" https://cristian-sena.github.io/html-css/modulo1/ex001/index.html">execute esse link </a>
