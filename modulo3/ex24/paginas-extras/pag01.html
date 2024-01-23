@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 1 teste</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+       caption{
+            font-size: 1.5em;
+            padding: 5px;
+            font-weight: bold;
+            background-color: lightgray;
+       }
+
+        thead, tfoot{
+            background-color: #383737;
+            color: azure;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        td.numero{
+            text-align: right;
+        }
+        tbody > tr:nth-child(even){
+
+            background-color: rgba(128, 128, 128, 0.589);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20 538 718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16 054 524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 141 626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 444 380</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total Habitantes</th>
+                <td class="numero"><strong>106.590.486</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
