@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 7</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+
+    <form action="">
+
+        <!--TAG SELECT PARA SER UM LISTA DE SELÇÃO - DENTRO COM TAG OPTION QUE SERÃO OS VALORES OS TEXTOS COLOCADOS DENTRO DESSE SELECT - PODDENDO COLCOAR OPTIONGROPU COLOCCANDO AS OPTIONS DENTOR DE UM GRUPO ESPECIFICO SE PREFERIR / E COM SELECTED DEIXA UM VALOR JA PRE DETERMINADO NO SEU SELECTED-->
+
+        <p>
+            <label for="iestado">Estado:</label>
+            <select name="estado" id="iestado">
+
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+
+                <optgroup label="Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SA">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+
+            </select>
+        </p>
+        
+        <!-- AQUI ABAIXO INOUT DE TEXT NORMAL MAS COM TAG LIST COM UM VALOR, QUE SERA COLOCADO DENTRO DE DATALIST COM OPTIONS OU SEJA - UM INPUT PRA ESCREVER COM A OPCÇÃO TAMBEM DE UMA PRE SELEÇÃO DISPONIVEL COM OPTION E SEUS VALORES / E NO DATA LIST PARA FUNCIOANR COLOCAR O VALOR DE LIST NO DATALIST-->
+
+        <p>
+            <label for="prof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="listaprof">
+            <datalist id="listaprof">
+                <option value="Dev">Desenvolvedor</option>
+                <option value="Fun">Funileiro</option>
+                <option value="Man">Manicure</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

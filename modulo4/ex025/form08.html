@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 8</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+
+    <!--OUTPUT NÃ OÉ PRA CALULCAR NEM ENVIAR NADA NA URL OU PRA ALGUM LUGAR, MAS SIM APENAS PARA MOSTRAR NO NAVEGADOR PARA O USURARIO - COLOCANDO O ONINPUT DENTRO DO INPUT COM VALORES DE PROGRRAMAÇÃO PRA FAZER UMA CONTA NESSE CASO DE SOMA ENTRE DOIS VALORES QUE SÃO COLOCADOS NOS INPUTS E INFORMANDO SUAS IDS-->
+
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="in1">Numero 1</label>
+            <input type="number" name="n1" id="in1" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+
+        </p>
+
+        <p>
+            <label for="in2">Numero 2</label>
+            <input type="number" name="n2" id="in2" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        
+        <p>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma" >0</output>
+ 
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+       
+    </form>
+</body>
+</html>

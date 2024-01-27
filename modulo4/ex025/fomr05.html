@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 5</title>
+</head>
+<body>
+    <form action="cadastro.php">
+        <fieldset> <!--tipo uma moldura envolta do formulario-->
+
+            <!--no input radio, colocar o mesmo Name para os inputs, para que consiga selecionar uma das opções do radio, senão seleciona tdoos e depois não consegue tirar a seleção-->
+
+            <legend>Sexo</legend><!--legenda ou titulo para seu formulario dos inputs abaixo-->
+
+            <input type="radio" name="sexo" id="isexm" value="M">
+            <label for="isexm">Masculino</label>
+
+            <input type="radio" name="sexo" id="isexf" value="F">
+            <label for="isexf">Feminino</label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend>Jogos do Momento</legend>
+
+            <input type="checkbox" name="jfifa" id="ijfifa" checked> <!--ATRIBUTO CHECKED SIGNIFICA QUE O INPUT AO CARRREGAR O ISTE JA VAI ESTAR PRE SELECIONADO PODE SER FEITO NO INPUT TYPE CHECKBOX TAMBEM-->
+            <label for="ijfifa">EA FC24</label>
+
+            <br>
+
+            <input type="checkbox" name="jgod" id="ijgod">
+            <label for="ijgod">God Of War Ragnarok</label>
+
+            <br>
+
+            <input type="checkbox" name="jr6" id="ijr6">
+            <label for="ijr6">Rainbow Six Siege</label>
+
+            <br>
+
+            <input type="checkbox" name="jfort" id="ijfort">
+            <label for="ijfort">Fortnite</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 01</title>
+</head>
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+    <form action="cadastro.php" autocomplete="off" method="post"> 
+        <!--Não vai completar sozinho com muitas vezes algo que não tem nada a ver-->
+
+        <!-- Method = post, é para deixar "um pouco mais seguro, para que os dados colocados no input não aparecer na url do site/ Mas aparece no dev tools se for em inspecionar e network com ele aberto colocando os dados" Então usa o post para mais= de 3000 palavras no formulario, não parcecer na url e envio de arquivos-->
+
+        <p><label for="inome">Nome:</label> 
+            <!--Label faz ligação entre o que escreveu na label com o input, importante para o site e tambem ao clicar na label, selecionar o input-->
+            <input type="text" name="Nome" id="inome"></p>
+
+        <p><label for="isobrenome">Sobrenome:</label>
+             <input type="text" name="Sobrenome" id="isobrenome"></p>
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>
